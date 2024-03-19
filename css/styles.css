@@ -11,12 +11,13 @@
 .address-link,
 .nav-link a,
 .address-link,
-.nav-studio,
-.sosial-icon,
-.fotter-sosial-icon {
+.nav-studio {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-
+.fotter-sosial-icon,
+.sosial-icon {
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-overlay {
   position: relative;
   overflow: hidden;
@@ -392,4 +393,12 @@ padding-top: 8px;
 }
 .fotter-sosial-icon:hover {
   background-color: #31D0AA;
+}
+.fotter-sosial-icon {
+    width: 24px;
+      height: 24px;
+}
+.fotter-sosial-li {
+      width: 40px;
+        height: 40px;
 }
