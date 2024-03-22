@@ -7,7 +7,6 @@
   display: block;
  }
 .nav-studio-main,
-.slogan-button,
 .address-link,
 .nav-link a,
 .address-link,
@@ -64,6 +63,10 @@
     left: 0;
 }
 
+.portfolio-card-text:hover {
+  transform: translateY(0%);
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -74,22 +77,23 @@
 
 }
 .header .container {
- 
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
 }
+
 .header {
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
   color: #434455;
 }
+
 p {
   font-weight: 400;
   font-size: 16px;
@@ -169,6 +173,7 @@ h3 {
   color: #404bbf;
 }
 .nav-studio-main::after {
+  position: absolute;
   content: "";
   display: block;
   margin: 20px 0 0 0;
@@ -179,7 +184,6 @@ h3 {
   border-radius: 2px;
   background-color: #404BBF;
   padding-bottom: 0;
-  position: absolute;
 } 
 .nav-link a:hover,
 .address-link:hover {
@@ -226,12 +230,18 @@ h3 {
   max-width: 496px;
   margin: 0 auto 48px;
 }
+.slogan .container,
+.our-team .container,
+.portfolio .container {
+  display: flex;
+  flex-direction: column;
+}
 .slogan {
   display: flex;
   flex-direction: column;
   padding: 188px 0;
   justify-content: center;
-  max-width: 1440px;/*  Фігня якась */
+  max-width: 1440px; /* Фігня якась */
   background: #2e2f42;
   background-position: center;
   background-image: linear-gradient(
