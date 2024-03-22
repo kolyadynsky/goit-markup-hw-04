@@ -22,7 +22,7 @@
 }
 .portfolio-overlay {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
