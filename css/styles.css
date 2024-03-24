@@ -24,17 +24,6 @@
   overflow: hidden;
 }
 
-
-/* .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #4D5AE5;
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
-} */
 .portfolio-card-text {
   position: absolute;
   top: 0;
@@ -47,10 +36,9 @@
   background-color: #4d5ae5;
   width: 100%;
   height: 100%;
-  /* transform: translateY(0%); */
   transform: translateY(100%); 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    left: 0;
+  left: 0;
 }
 
 .portfolio-li:hover .portfolio-card-text {
@@ -62,7 +50,6 @@
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  justify-content: center;
   align-items: center;
 
 }
@@ -145,20 +132,18 @@ h3 {
 .nav-link, .address ul {
   gap: 40px;
 }
-.nav-link a {
+
+.nav-studio-main,
+.nav-studio {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
 }
-/* .nav-link:nth-child(1) a::after:active  */
-/* .studio {
-  display: flex;
-  flex-direction: column;
-  position: relative; 
-} */
-.nav-link .nav-studio-main {
+.nav-studio-main {
   position: relative;
   color: #404bbf;
 }
@@ -166,7 +151,6 @@ h3 {
   position: absolute;
   content: "";
   display: block;
-  /* margin: 20px 0 0 0; */
   left: 0;
   bottom: -1px;
   width: 100%;
@@ -207,11 +191,9 @@ h3 {
   display: inline-block;
   margin-bottom: 16px;
 }
-.nav-studio-main,
-.nav-studio {
-  /* color: #2e2f42; */
-  color: #404bbf;
-  padding: 24px 0;
+
+.studio {
+  color: #2E2F42;
 }
 
 .slogan-title {
@@ -239,7 +221,7 @@ h3 {
   rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)
   ),
-    url("/images/people-office.jpg");
+    url("../images/people-office.jpg");
     background-size: cover;
   background-repeat: no-repeat;
 }
@@ -274,7 +256,6 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 112px;
-  width: 264px;
   background: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -296,9 +277,7 @@ padding: 120px 0;
 .about-company li {
   width: calc((100% - 24px * 3) / 4);
 }
-.company .container {
-  height: 112px;
-}
+
 /*---------------  */
 .visually-hidden {
   position: absolute;
@@ -317,7 +296,7 @@ padding: 120px 0;
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .sosial-li {
@@ -339,8 +318,6 @@ padding: 120px 0;
 
 .sosial-icon, .fotter-sosial-icon {
   transition-property: background-color;
-  /* background-color: #4D5AE5;
-  border-radius: 50%; */
 }
 .sosial-link:hover,
 .sosial-link:focus {
@@ -456,21 +433,13 @@ padding: 120px 0;
 .footer-logo-p {
   margin-right: 120px
 }
-/* .footer-social-media {
-  margin-left: 120px;
-} */
+
 .fotter-sosial {
   display: flex;
   gap: 16px;
   justify-content: center;
 }
-/* .fotter-sosial-icon:hover {
-  background-color: #31D0AA;
-} */
-/* .fotter-sosial-icon {
-    width: 24px;
-      height: 24px;
-} */
+
 .fotter-sosial-li {
       width: 40px;
       height: 40px;
